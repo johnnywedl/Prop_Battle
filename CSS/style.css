@@ -24,7 +24,6 @@ header img.left {
 header img.right {
     align-self: flex-end;
     padding-right: 40px;
-
 }
 
 main.container {
@@ -35,7 +34,7 @@ main.container {
 .left-column, .right-column {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     padding-right: 0 20px;
@@ -54,13 +53,15 @@ main.container {
     color: #fff;
     text-align: center;
     max-width: 80%;
+    font-family: "Helvetica"
 }
 
 .left-column .btn1, .left-column .btn, .right-column .btn1, .right-column .btn {
     margin: 10px 0;
     padding: 10px 20px;
-    width: 50%; 
+    width: 45%; 
     display: inline-block; 
+    text-align: center; 
 }
 
 .left-column .btn1, .right-column .btn1 {
@@ -69,6 +70,7 @@ main.container {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 10px
 }
 
 .left-column .btn, .right-column .btn {
@@ -77,6 +79,7 @@ main.container {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 10px
 }
 
 .left-column .btn1:hover, .right-column .btn1:hover {
@@ -87,12 +90,30 @@ main.container {
     background-color: #41E1F2; 
 }
 
-/* .right-column {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+img[src="images/Social.png"] {
+    width: 38%;
+    height: auto; 
+    padding-right: 50px;
+}
+
+img[src="images/Players.png"]{
+    padding-right: 250px;
+}
+/* 
+main.container .right-column h1,
+main.container .right-column p {
+    padding-right: 25px;
 } */
+
+main.container .left-column h1,
+main.container .left-column p {
+    padding-left: 50px; 
+}
+
+main.container .right-column h1,
+main.container .right-column p {
+    padding-right: 75px; 
+}
 
 .right-column img, .left-column img {
     max-width: 100%;
@@ -101,10 +122,52 @@ main.container {
 
 .download-images {
     display: flex;
+    padding-left: 35px;
 }
 
 .download-image {
-    width: 150px; /* Adjust size as needed */
+    width: 150px; 
     height: auto;
-    margin-right: 10px; /* Adjust spacing between images */
+    margin-right: 20px; 
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main.container {
+    flex: 1;
+    margin: 0 auto;
+}
+
+.bottom-section {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    align-items: center;
+}
+
+.bottom-section > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.bottom-section h1 {
+    background: linear-gradient(to bottom, #41E1F2, #7A32ED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .footer{
+    display: block;
+    text-align: center;
+
+}
+
+.logo{
+    width: 300px;
+    margin-bottom: 40px;
+} */
