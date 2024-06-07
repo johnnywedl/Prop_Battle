@@ -19,6 +19,10 @@ header img {
 header img.left {
     align-self: flex-start;
     padding-left: 40px;
+    width: 30%;
+    height: auto;
+    padding-top: 30px;
+
 }
 
 header img.right {
@@ -99,6 +103,13 @@ img[src="images/Social.png"] {
 img[src="images/Players.png"]{
     padding-right: 250px;
 }
+
+/* img[src="images/Logo.png"]{
+    width: 250px;
+    height: auto;
+    padding: 25px;
+} */
+
 /* 
 main.container .right-column h1,
 main.container .right-column p {
